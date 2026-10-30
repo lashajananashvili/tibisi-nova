@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ka" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Printing & მოდელირება — TechZone</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- ==================== HEADER / NAVIGATION BAR ==================== -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="project.html" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition duration-300">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <span class="text-2xl font-black tracking-tight text-white">
+                        Tech<span class="text-cyan-400">Zone</span>
+                    </span>
+                </a>
+
+                <!-- Navigation Links -->
+                <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                    <a href="project.html" class="hover:text-cyan-400 transition">მთავარი</a>
+                    <a href="3d-printing.html" class="text-cyan-400 font-semibold transition">3D ბეჭდვა</a>
+                    <a href="electronics.html" class="hover:text-cyan-400 transition">Arduino & DIY</a>
+                    <a href="news.html" class="hover:text-cyan-400 transition">სიახლეები</a>
+                    <a href="about.html" class="hover:text-cyan-400 transition">ჩვენ შესახებ</a>
+                    <a href="contact.html" class="hover:text-cyan-400 transition">კონტაქტი</a>
+                </nav>
+
+                <!-- Action Button in Header -->
+                <div class="flex items-center gap-4">
+                    <a href="#printers" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-semibold text-slate-950 bg-cyan-400 rounded-lg hover:bg-cyan-300 shadow-md shadow-cyan-400/20 transition">
+                        პრინტერების ნახვა
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION: 3D PRINTING ==================== -->
+    <section class="relative overflow-hidden py-20 bg-slate-900/30 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="px-3 py-1 rounded-full text-xs font-semibold bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">
+                        ინოვაცია & წარმოება
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl font-extrabold text-white mt-4 tracking-tight leading-tight">
+                        3D Printing — <br>
+                        <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                            ციფრულიდან რეალურამდე
+                        </span>
+                    </h1>
+                    <p class="text-slate-400 mt-4 text-base sm:text-lg leading-relaxed">
+                        გადააქციეთ თქვენი 3D მოდელები რეალურ ობიექტებად. თანამედროვე FDM და Resin 3D პრინტერები, უმაღლესი ხარისხის ფილამენტები და საინჟინრო მხარდაჭერა.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-8">
+                        <a href="#printers" class="px-6 py-3 rounded-xl font-bold text-slate-950 bg-cyan-400 hover:bg-cyan-300 transition shadow-lg shadow-cyan-400/20">
+                            პრინტერების კატალოგი
+                        </a>
+                        <a href="#filaments" class="px-6 py-3 rounded-xl font-semibold text-slate-300 border border-slate-700 hover:bg-slate-800 transition">
+                            ფილამენტები & მასალები
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3D Printer Showcase Photo -->
+                <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=1000&q=80" 
+                         alt="3D პრინტერი მუშაობის პროცესში" 
+                         class="w-full h-80 sm:h-96 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl backdrop-blur-md bg-slate-900/80 border border-slate-700/60">
+                        <p class="text-xs font-semibold text-cyan-400">მიკრონული სიზუსტე</p>
+                        <p class="text-xs text-slate-300 mt-0.5">0.05მმ-იანი შრეების სიმაღლე და ულტრა-გლუვი ზედაპირი.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PRINTERS CATALOG ==================== -->
+    <section id="printers" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-cyan-400">აპარატურა</span>
+                <h2 class="text-3xl font-extrabold text-white mt-1">3D პრინტერების მოდელები</h2>
+                <p class="text-slate-400 text-sm mt-2">პრინტერები როგორც დამწყებთათვის, ასევე პროფესიონალური საწარმოებისთვის</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Printer 1 -->
+                <div class="rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden hover:border-slate-700 transition flex flex-col group">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=800&q=80" 
+                             alt="FDM 3D პრინტერი" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-cyan-500 text-slate-950 font-bold text-xs px-2.5 py-1 rounded-md">
+                            FDM ტექნოლოგია
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition">Apex Pro FDM 3D პრინტერი</h3>
+                            <p class="text-sm text-slate-400 mt-2 leading-relaxed">
+                                500 მმ/წმ ულტრა-სიჩქარე, ორმაგი წამყვანი ექსტრუდერი, ავტო-კალიბრაცია და 300°C-მდე ცხელი თავაკი.
+                            </p>
+                            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
+                                <li>✔ საბეჭდი მოცულობა: 250 x 250 x 260 მმ</li>
+                                <li>✔ AI კამერა შეცდომების დეტექციისთვის</li>
+                                <li>✔ Wi-Fi და სმარტფონის აპლიკაცია</li>
+                            </ul>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between">
+                            <span class="text-sm font-bold text-cyan-400">1,599 ₾</span>
+                            <a href="contact.html" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-cyan-500 text-slate-950 hover:bg-cyan-400 transition">
+                                შეკვეთა
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Printer 2 -->
+                <div class="rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden hover:border-slate-700 transition flex flex-col group">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" 
+                             alt="Resin 3D პრინტერი" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-purple-500 text-white font-bold text-xs px-2.5 py-1 rounded-md">
+                            Resin / SLA
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition">Photon Ultra 12K Resin პრინტერი</h3>
+                            <p class="text-sm text-slate-400 mt-2 leading-relaxed">
+                                სამკაულების, სტომატოლოგიური და მინიატურული დეტალების უმაღლესი სიზუსტის საბეჭდი ფოტოსენსიტიური ფისით.
+                            </p>
+                            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
+                                <li>✔ 12K მონოქრომული LCD ეკრანი</li>
+                                <li>✔ 19 მიკრონი XY სიზუსტე</li>
+                                <li>✔ ჰაერის ჩაშენებული ნახშირის ფილტრი</li>
+                            </ul>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between">
+                            <span class="text-sm font-bold text-cyan-400">1,899 ₾</span>
+                            <a href="contact.html" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-cyan-500 text-slate-950 hover:bg-cyan-400 transition">
+                                შეკვეთა
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Printer 3 -->
+                <div class="rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden hover:border-slate-700 transition flex flex-col group">
+                    <div class="h-56 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" 
+                             alt="სამრეწველო პრინტერი" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-4 left-4 bg-blue-500 text-white font-bold text-xs px-2.5 py-1 rounded-md">
+                            Industrial Max
+                        </span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition">Titan Max დიდი ფორმატის პრინტერი</h3>
+                            <p class="text-sm text-slate-400 mt-2 leading-relaxed">
+                                გიგანტური ზომის დეტალებისთვის, დახურული თერმო-კამერით და საინჟინრო პლასტმასების (Nylon, Carbon) მხარდაჭერით.
+                            </p>
+                            <ul class="mt-4 space-y-1.5 text-xs text-slate-300">
+                                <li>✔ საბეჭდი მოცულობა: 450 x 450 x 470 მმ</li>
+                                <li>✔ გაცხელებადი კამერა 60°C-მდე</li>
+                                <li>✔ უწყვეტი ბეჭდვის რეჟიმი</li>
+                            </ul>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between">
+                            <span class="text-sm font-bold text-cyan-400">3,499 ₾</span>
+                            <a href="contact.html" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-cyan-500 text-slate-950 hover:bg-cyan-400 transition">
+                                შეკვეთა
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FILAMENTS SECTION ==================== -->
+    <section id="filaments" class="py-20 bg-slate-900/40 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-cyan-400">მასალები</span>
+                <h2 class="text-3xl font-extrabold text-white mt-1">ფილამენტები და პოლიმერები</h2>
+                <p class="text-slate-400 text-sm mt-2">1.75მმ დიამეტრის უმაღლესი სისუფთავის მასალები ნებისმიერი ამოცანისთვის</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Material 1: PLA+ -->
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-500/40 transition">
+                    <span class="text-xs font-bold text-cyan-400 uppercase">მარტივი ბეჭდვა</span>
+                    <h4 class="text-lg font-bold text-white mt-2">PLA+ Filament 1კგ</h4>
+                    <p class="text-xs text-slate-400 mt-2">ეკოლოგიური ბიოპლასტმასი სიმინდის სახამებლის ბაზაზე. უსუნო, მარტივი დასაბეჭდი.</p>
+                    <div class="mt-4 pt-3 border-t border-slate-800 text-xs font-semibold text-slate-300 flex justify-between">
+                        <span>ტემპ: 190-220°C</span>
+                        <span class="text-cyan-400 font-bold">59 ₾</span>
+                    </div>
+                </div>
+
+                <!-- Material 2: PETG -->
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-500/40 transition">
+                    <span class="text-xs font-bold text-blue-400 uppercase">გამძლე & დრეკადი</span>
+                    <h4 class="text-lg font-bold text-white mt-2">PETG Filament 1კგ</h4>
+                    <p class="text-xs text-slate-400 mt-2">ტენიანობისა და ქიმიკატების მიმართ მდგრადი მასალა მექანიკური დეტალებისთვის.</p>
+                    <div class="mt-4 pt-3 border-t border-slate-800 text-xs font-semibold text-slate-300 flex justify-between">
+                        <span>ტემპ: 230-250°C</span>
+                        <span class="text-cyan-400 font-bold">69 ₾</span>
+                    </div>
+                </div>
+
+                <!-- Material 3: Carbon Fiber -->
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-500/40 transition">
+                    <span class="text-xs font-bold text-emerald-400 uppercase">ექსტრემალური სიმტკიცე</span>
+                    <h4 class="text-lg font-bold text-white mt-2">Carbon Fiber PLA 1კგ</h4>
+                    <p class="text-xs text-slate-400 mt-2">ნახშირბადის ბოჭკოებით გამაგრებული მასალა ულტრა-მსუბუქი და მყარი კონსტრუქციებისთვის.</p>
+                    <div class="mt-4 pt-3 border-t border-slate-800 text-xs font-semibold text-slate-300 flex justify-between">
+                        <span>ტემპ: 210-235°C</span>
+                        <span class="text-cyan-400 font-bold">119 ₾</span>
+                    </div>
+                </div>
+
+                <!-- Material 4: UV Resin -->
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 hover:border-cyan-500/40 transition">
+                    <span class="text-xs font-bold text-purple-400 uppercase">ფოტოსენსიტიური</span>
+                    <h4 class="text-lg font-bold text-white mt-2">Standard UV Resin 1კგ</h4>
+                    <p class="text-xs text-slate-400 mt-2">სწრაფად მყარებადი 405nm UV ფისი Resin პრინტერებისთვის. იდეალურია ფიგურებისთვის.</p>
+                    <div class="mt-4 pt-3 border-t border-slate-800 text-xs font-semibold text-slate-300 flex justify-between">
+                        <span>ტალღა: 405nm</span>
+                        <span class="text-cyan-400 font-bold">89 ₾</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-slate-950 border-t border-slate-800 text-slate-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div class="space-y-4">
+                    <a href="project.html" class="text-2xl font-black text-white">Tech<span class="text-cyan-400">Zone</span></a>
+                    <p class="text-sm text-slate-400">თქვენი სანდო პარტნიორი 3D ბეჭდვასა და ინოვაციურ წარმოებაში.</p>
+                </div>
+                <div>
+                    <h4 class="text-white text-sm font-semibold uppercase mb-4">გვერდები</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="project.html" class="hover:text-cyan-400 transition">მთავარი</a></li>
+                        <li><a href="3d-printing.html" class="hover:text-cyan-400 transition">3D ბეჭდვა</a></li>
+                        <li><a href="electronics.html" class="hover:text-cyan-400 transition">Arduino & DIY</a></li>
+                        <li><a href="news.html" class="hover:text-cyan-400 transition">სიახლეები</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white text-sm font-semibold uppercase mb-4">კატეგორიები</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#printers" class="hover:text-cyan-400 transition">FDM პრინტერები</a></li>
+                        <li><a href="#printers" class="hover:text-cyan-400 transition">Resin პრინტერები</a></li>
+                        <li><a href="#filaments" class="hover:text-cyan-400 transition">PLA & PETG ფილამენტები</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white text-sm font-semibold uppercase mb-4">კონტაქტი</h4>
+                    <p class="text-xs text-slate-400 mb-2">გაქვთ შეკითხვები 3D ბეჭდვაზე?</p>
+                    <a href="contact.html" class="inline-block px-4 py-2 rounded-lg bg-cyan-400 text-slate-950 font-bold text-xs hover:bg-cyan-300 transition">
+                        დაგვიკავშირდით
+                    </a>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-900 text-center text-xs text-slate-500">
+                © 2026 TechZone. ყველა უფლება დაცულია.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
